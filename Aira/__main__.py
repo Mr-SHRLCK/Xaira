@@ -58,9 +58,9 @@ def vercheck() -> str:
 
 
 SOURCE_STRING = """
-✨ I'm bulited in python-3, using *python-telegram-bot-library*.And I am completely opensource - you can find my codes [here.](https://github.com/Sur-vivor/CinderellaProBot)
+✨ I'm bulited in python-3, using *python-telegram-bot-library*.And I am completely opensource - you can find my codes [here.](https://github.com/Mr-SHRLCK/Xaira)
 
-✨You can *copy* me [here.](https://heroku.com/deploy?template=https://github.com/Sur-vivor/CinderellaProBot.git)
+✨You can *copy* me [here.](https://heroku.com/deploy?template=https://github.com/MR-SHRLCK/Aira.git)
 """
 
 
@@ -180,8 +180,8 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="🤝Help",callback_data="help_back"),InlineKeyboardButton(text="🛡Creator🛡",url="https://t.me/Surv_ivor")]]
-    keyboard += [[InlineKeyboardButton(text="🌐Connect Group", callback_data="main_connect"),InlineKeyboardButton(text="⚜️Add Me⚜️",url="t.me/{}?startgroup=true".format(bot.username))]]
+    keyboard = [[InlineKeyboardButton(text="🎁Help",callback_data="help_back"),InlineKeyboardButton(text="🎃Creator🎃",url="https://t.me/MR_SHRLOCK")]]
+    keyboard += [[InlineKeyboardButton(text="🎭Connect Group", callback_data="main_connect"),InlineKeyboardButton(text="🎀Add Me🎀",url="t.me/{}?startgroup=true".format(bot.username))]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
                                          reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
@@ -236,7 +236,7 @@ def help_button(bot: Bot, update: Update):
             query.message.reply_text(text=text,
                                      parse_mode=ParseMode.MARKDOWN,
                                      reply_markup=InlineKeyboardMarkup(
-                                         [[InlineKeyboardButton(text="🚶🏻‍♂️Back🚶🏻‍♂️", callback_data="help_back")]]))
+                                         [[InlineKeyboardButton(text="🔙Back", callback_data="help_back")]]))
 
         elif prev_match:
             curr_page = int(prev_match.group(1))
@@ -403,7 +403,7 @@ def get_settings(bot: Bot, update: Update):
             text = "Click here to get this chat's settings, as well as yours."
             msg.reply_text(text,
                            reply_markup=InlineKeyboardMarkup(
-                               [[InlineKeyboardButton(text="⚙️Settings⚙️",
+                               [[InlineKeyboardButton(text="🛠️Settings🛠️",
                                                       url="t.me/{}?start=stngs_{}".format(
                                                           bot.username, chat.id))]]))
         else:
@@ -602,7 +602,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Cinderella running...")
+        LOGGER.info("Aira running...")
         updater.start_polling(timeout=15, read_latency=4)
         client.run_until_disconnected()
 
