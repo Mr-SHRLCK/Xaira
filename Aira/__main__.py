@@ -60,7 +60,7 @@ def vercheck() -> str:
 SOURCE_STRING = """
 ✨ I'm bulited in python-3, using *python-telegram-bot-library*.And I am completely opensource - you can find my codes [here.](https://github.com/Mr-SHRLCK/Xaira)
 
-✨You can *copy* me [here.](https://heroku.com/deploy?template=https://github.com/MR-SHRLCK/Aira.git)
+✨You can *copy* me [here.](https://heroku.com/deploy?template=https://github.com/MR-SHRLCK/Xaira.git)
 """
 
 
