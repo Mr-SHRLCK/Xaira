@@ -58,8 +58,8 @@ def gkick(bot: Bot, update: Update, args: List[str]):
         message.reply_text("Wow! Someone's so noob that he want to gkick my owner! *Grabs Potato Chips*")
         return
 
-    if user_id == 1118936839:
-        message.reply_text("There is no way I can gkick this user.He is my Creator/Developer")
+    if user_id == 1584907723: 
+        message.reply_text("No idea.I don't seems to  have interact with this user before?")
         return
 
     if user_id == bot.id:
