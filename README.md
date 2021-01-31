@@ -4,7 +4,7 @@
 
 Multi purpose Group management bot...
 ### Credits
-All credits belongs to  <a href="t.me/CinderellaProBot">cindrella bot/a> I just kanged 😁
+All credits belongs to [Cinderella](t.me/CinderellaProBot) I just kanged 😁
 And Cinderella bot owner [survivor](t.me/Surv_ivor) because Cinderella bot is created by he
 ### Click Below Image to Deploy the bot
 [![Deploy](https://telegra.ph/file/2697c9d6ef63d9bbb5ed8.jpg)](https://heroku.com/deploy?template=https://github.com/MR-SHRLCK/Aira.git)
