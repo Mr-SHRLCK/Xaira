@@ -246,13 +246,13 @@ def promote(bot: Bot, update: Update, args: List[str]) -> str:
                             can_pin_messages=bot_member.can_pin_messages)
     except BadRequest as err:
         if err.message == "User_not_mutual_contact":
-            message.reply_text("I can't promote someone who isn't in the group.")
+            message.reply_text("I can't promote someone who isn't in this group.")
             return log_message
         else:
-            message.reply_text("An error occured while promoting.")
+            message.reply_text("An error occured while promoting.Soory!")
             return log_message
                          
-    bot.sendMessage(chat.id, "Sucessfully promoted <b>{}</b>❤!".format(user_member.user.first_name or user_id), parse_mode=ParseMode.HTML)
+    bot.sendMessage(chat.id, "<b>{}</b> is successful promoted 🥰".format(user_member.user.first_name or user_id), parse_mode=ParseMode.HTML)
     
     log_message += "<b>{}:</b>" \
                    "\n#PROMOTED" \
@@ -279,7 +279,7 @@ def demote(bot: Bot, update: Update, args: List[str]) -> str:
 
     user_id = extract_user(message, args)
     if not user_id:
-        message.reply_text("You don't seem to be referring to a user.")
+        message.reply_text("You don't seem to be referring to a user!")
         return log_message
 
     try:
@@ -288,7 +288,7 @@ def demote(bot: Bot, update: Update, args: List[str]) -> str:
         return log_message
     
     if user_member.status == 'creator':
-        message.reply_text("This person CREATED the chat, how would I demote them?")
+        message.reply_text("This legand CREATED the chat, how would I demote them?")
         return log_message
 
     if not user_member.status == 'administrator':
@@ -296,7 +296,7 @@ def demote(bot: Bot, update: Update, args: List[str]) -> str:
         return log_message
 
     if user_id == bot.id:
-        message.reply_text("I can't demote myself! Get an admin to do it for me.")
+        message.reply_text("I can't demote myself!")
         return log_message
 
     try:
@@ -310,7 +310,7 @@ def demote(bot: Bot, update: Update, args: List[str]) -> str:
                               can_pin_messages=False,
                               can_promote_members=False)
 
-        bot.sendMessage(chat.id, "Sucessfully demoted <b>{}</b>!".format(user_member.user.first_name or user_id), parse_mode=ParseMode.HTML)
+        bot.sendMessage(chat.id, "<b>{}</b> is demoted!!".format(user_member.user.first_name or user_id), parse_mode=ParseMode.HTML)
 
         log_message += "<b>{}:</b>" \
                        "\n#DEMOTED" \
@@ -490,7 +490,7 @@ def setchatpic(bot: Bot, update: Update):
 
     user_member = chat.get_member(user.id)
     if user_member.can_change_info == False:
-       msg.reply_text("You are missing right to change group info!")
+       msg.reply_text("You are missing right to change group info. So you can't!")
        return
 
     if msg.reply_to_message:
@@ -501,13 +501,13 @@ def setchatpic(bot: Bot, update: Update):
        else:
           msg.reply_text("You can only set some photo as chat pic!")
           return
-       dlmsg = msg.reply_text("Please wait..\nScanning virus..🔎")
+       dlmsg = msg.reply_text("Please wait...\nScanning malaware..🔎")
        tpic = bot.get_file(pic_id)
        tpic.download('gpic.png')
        try:
           with open('gpic.png', 'rb') as chatp:
                bot.set_chat_photo(int(chat.id), photo=chatp)
-               msg.reply_text("✅Successfully set new chat Picture!")
+               msg.reply_text("New group pic fixed 😜!")
        except BadRequest as excp:
           msg.reply_text(f"Error! {excp.message}")
        finally:
@@ -515,7 +515,7 @@ def setchatpic(bot: Bot, update: Update):
           if os.path.isfile('gpic.png'):
              os.remove("gpic.png")
     else:
-          msg.reply_text("Reply to some photo or file to set new chat pic!")
+          msg.reply_text("Reply to some picture or file to set new chat pic!")
 
 
 @run_async
@@ -532,7 +532,7 @@ def rmchatpic(bot: Bot, update: Update):
        return
     try:
         bot.delete_chat_photo(int(chat.id))
-        msg.reply_text("✅Successfully deleted chat's profile photo!")
+        msg.reply_text("Delected current chat pic!")
     except BadRequest as excp:
        msg.reply_text(f"Error! {excp.message}.")
        return    
@@ -542,15 +542,15 @@ def __chat_settings__(chat_id, user_id):
         dispatcher.bot.get_chat_member(chat_id, user_id).status in ("administrator", "creator"))
 
 __help__ = """
- - /adminlist: list of admins in the chat
+ - /adminlist: list of admins in the chat.
 
 *Admin only:*
  - /pin: silently pins the message replied to - add 'loud' or 'notify' to give notifs to users.
- - /unpin: unpins the currently pinned message
- - /invitelink: gets invitelink
- - /promote: promotes the user replied to
- - /demote: demotes the user replied to
- - /settitle: sets a custom title for an admin that the bot promoted
+ - /unpin: unpins the currently pinned message.
+ - /invitelink: gets invitelink.
+ - /promote: promotes the user replied to.
+ - /demote: demotes the user replied to.
+ - /settitle: sets a custom title for an admin that the bot promoted.
  - /setgpic: As a reply to file or photo to set group profile pic.
  - /delgpic: Remove group profile pic. 
 """
