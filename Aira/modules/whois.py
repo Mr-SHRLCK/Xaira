@@ -44,20 +44,20 @@ def info(bot: Bot, update: Update, args: List[str]):
     else:
         return
     
-    text = (f"<b>User Information:</b>\n"
+    text = (f"<b>User Information E:</b>\n"
             f"🆔: <code>{user.id}</code>\n"
-            f"👤Name: {html.escape(user.first_name)}")
+            f"🙎First Name: {html.escape(user.first_name)}")
 
     if user.last_name:
-        text += f"\n🚹Last Name: {html.escape(user.last_name)}"
+        text += f"\n🧏Last Name: {html.escape(user.last_name)}"
 
     if user.username:
-        text += f"\n♻️Username: @{html.escape(user.username)}"
+        text += f"\n🔬Username: @{html.escape(user.username)}"
 
-    text += f"\n☣️Permanent user link: {mention_html(user.id, 'link🚪')}"
+    text += f"\n🗑️user link: {mention_html(user.id, 'link🚪')}"
 
     num_chats = sql.get_user_num_chats(user.id)
-    text += f"\n🌐Chat count: <code>{num_chats}</code>"
+    text += f"\n🗒️Chat count: <code>{num_chats}</code>"
     text += "\n🎭Number of profile pics: {}".format(bot.get_user_profile_photos(user.id).total_count)
    
     try:
@@ -67,33 +67,33 @@ def info(bot: Bot, update: Update, args: List[str]):
             result = result.json()["result"]
             if "custom_title" in result.keys():
                 custom_title = result['custom_title']
-                text += f"\n🛡This user holds the title⚜️ <b>{custom_title}</b> here."
+                text += f"\nThis user holds the title <b>{custom_title}</b> here."
     except BadRequest:
         pass
 
    
 
     if user.id == OWNER_ID:
-        text += "\n🚶🏻‍♂️Uff,This person is my Owner🤴\nI would never do anything against him!."
+        text += "\n my owner🥳."
         
     elif user.id in DEV_USERS:
-        text += "\n🚴‍♂️Pling,This person is my dev🤷‍♂️\nI would never do anything against him!."
+        text += "\nThis person is my devloper."
         
-    elif user.id == 1118936839:
-        text += "\n🚴‍♂️Pling,This person is my Creator/developer🤷‍♂️\nI would never do anything against him!."     
+    elif user.id == 1584907723:
+        text += "\nNo Idea about this user. I don't seem have interact this user before?."     
         
     elif user.id in SUDO_USERS:
-        text += "\n🚴‍♂️Pling,This person is one of my sudo users! " \
-                    "Nearly as powerful as my owner🕊so watch it.."
+        text += "\nThis person is one of my sudo users! " \
+                    "Nearly as powerful as my owner.."
         
     elif user.id in SUPPORT_USERS:
-        text += "\n🚴‍♂️Pling,This person is one of my support users! " \
-                        "Not quite a sudo user, but can still gban you off the map."
+        text += "\nThis person is one of my support users! " \
+                        "Not quite a sudo user."
         
   
        
     elif user.id in WHITELIST_USERS:
-        text += "\n🚴‍♂️Pling,This person has been whitelisted! " \
+        text += "\nThis person has been whitelisted! " \
                         "That means I'm not allowed to ban/kick them."
     elif user.id == bot.id:     
         text += "\n💃Lol🧞‍♂️It's Me😉"
