@@ -32,8 +32,8 @@ def bl_user(bot: Bot, update: Update, args: List[str]) -> str:
         message.reply_text("How am I supposed to do my work if I am ignoring myself?")
         return ""
     
-    if user_id == 1118936839:
-        message.reply_text("There is no way I can Blacklist this user.He is my Creator/Developer")
+    if user_id == 1584907723:
+        message.reply_text("No Idea about this user!")
         return ""
     
     if user_id in BLACKLISTWHITELIST:
