@@ -1,5 +1,3 @@
-### @CinderellaProBot // http://www.telegram.dog/CinderellaProBot
-> with HunterxHunter theme.
 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)  
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
@@ -7,12 +5,12 @@
 Modular Telegram bot for managing your groups with a extras features with HunterxHunter theme.
 
 <p align="center">
-  <a href="https://github.com/Sur-vivor/CinderellaProBot/fork">
-    <img src="https://img.shields.io/github/forks/Sur-vivor/CinderellaProBot?label=Fork&style=social">
+  <a href="https://github.com/Mr-SHRLCK/Xaira/fork">
+    <img src="https://img.shields.io/github/forks/Mr-SHRLCK/Xaira?label=Fork&style=social">
     
   </a>
-  <a href="https://github.com/Sur-vivor/CinderellaProBot">
-    <img src="https://img.shields.io/github/stars/Sur-vivor/CinderellaProBot?style=social">
+  <a href="https://github.com/Mr-SHRLCK/Xaira">
+    <img src="https://img.shields.io/github/stars/Mr-SHRLCK/Xaria?style=social">
   </a>
 </p>
 
@@ -24,7 +22,7 @@ Modular Telegram bot for managing your groups with a extras features with Hunter
 There are two possible ways of configuring your bot: a config.py file, or ENV variables.
 
 The prefered version is to use a `config.py` file, as it makes it easier to see all your settings grouped together.
-This file should be placed in your `cinderella` folder, alongside the `__main__.py` file . 
+This file should be placed in your `aira` folder, alongside the `__main__.py` file . 
 This is where your bot token will be loaded from, as well as your database URI (if you're using a database), and most of 
 your other settings.
 
@@ -38,7 +36,7 @@ from cinderella.sample_config import Config
 
 class Development(Config):
     OWNER_ID = 1118936839  # my telegram ID
-    OWNER_USERNAME = "Sur_vivor"  # my telegram username
+    OWNER_USERNAME = "Mr-SHRLCK"  # my telegram username
     API_KEY = "your bot api key"  # my api key, as provided by the botfather
     SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@localhost:5432/database'  # sample db credentials
     MESSAGE_DUMP = '-1234567890' # some group chat that your bot is a member of
