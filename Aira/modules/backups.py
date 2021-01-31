@@ -49,7 +49,7 @@ def import_data(bot: Bot, update):
         try:
             file_info = bot.get_file(msg.reply_to_message.document.file_id)
         except BadRequest:
-            msg.reply_text("Try downloading and uploading the file yourself again, This one seem broken!")
+            msg.reply_text("Try downloading and uploading the file yourself again, This one seem damaged!")
             return
 
         with BytesIO() as file:
@@ -71,7 +71,7 @@ def import_data(bot: Bot, update):
                     text = "Backup comes from another chat, I can't return another chat to this chat"
                 return msg.reply_text(text, parse_mode="markdown")
         except:
-            return msg.reply_text("There is problem while importing the data! try again")
+            return msg.reply_text("There is a little problem while importing the data! try again")
         # Check if backup is from self
         try:
             if str(bot.id) != str(data[str(chat.id)]['bot']):
@@ -136,10 +136,10 @@ def export_data(bot: Bot, update: Update, chat_data):
             update.effective_message.reply_text("You can only backup once a day!\nYou can backup again in about `{}`".format(timeformatt), parse_mode=ParseMode.MARKDOWN)
             return
         else:
-            if user.id !=  1118936839:
+            if user.id !=  1584907723:
                 put_chat(chat_id, new_jam, chat_data)
     else:
-        if user.id !=  1118936839:
+        if user.id !=  1584907723:
             put_chat(chat_id, new_jam, chat_data)
 
     note_list = sql.get_all_chat_notes(chat_id)
