@@ -4,9 +4,9 @@
 
 Multi purpose Group management bot...
 ### Credits
-All credits belongs to [Cinderella](t.me/CinderellaProBot) I just kanged 😁
-And Cinderella bot owner [survivor](t.me/Surv_ivor) because Cinderella bot is created by he
-### Click Below Image to Deploy the bot
+<b>The bot is based on the original work done by [survivor](t.me/Surv_ivor) This repo is  just revamped from survivor's [Cinderella](t.me/CinderellaProBot) All original credits go to survivor and his dedication, Without his efforts, this fork would not have been possible!</b>
+
+
 [![Deploy](https://telegra.ph/file/2697c9d6ef63d9bbb5ed8.jpg)](https://heroku.com/deploy?template=https://github.com/MR-SHRLCK/Aira.git)
 
 ### Configuration
