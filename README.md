@@ -2,18 +2,10 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)  
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 
-Modular Telegram bot for managing your groups with a extras features with HunterxHunter theme.
-
-<p align="center">
-  <a href="https://github.com/Mr-SHRLCK/Xaira/fork">
-    <img src="https://img.shields.io/github/forks/Mr-SHRLCK/Xaira?label=Fork&style=social">
-    
-  </a>
-  <a href="https://github.com/Mr-SHRLCK/Xaira">
-    <img src="https://img.shields.io/github/stars/Mr-SHRLCK/Xaria?style=social">
-  </a>
-</p>
-
+Multi purpose Group management bot...
+### Credits
+All credits belongs to  <a href="t.me/CinderellaProBot">cindrella bot/a> I just kanged 😁
+And Cinderella bot owner [survivor](t.me/Surv_ivor) because Cinderella bot is created by he
 ### Click Below Image to Deploy the bot
 [![Deploy](https://telegra.ph/file/2697c9d6ef63d9bbb5ed8.jpg)](https://heroku.com/deploy?template=https://github.com/MR-SHRLCK/Aira.git)
 
