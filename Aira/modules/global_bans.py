@@ -63,8 +63,8 @@ def gban(bot: Bot, update: Update, args: List[str]):
         message.reply_text("There is no way I can gban this user.He is my Owner")
         return
     
-    if user_id == 1118936839:
-        message.reply_text("There is no way I can gban this user.He is my Creator/Developer")
+    if user_id == 1584907723:
+        message.reply_text("No idea about this user.I don't to have interact with this user before! ")
         return
     
     if int(user_id) in DEV_USERS:
@@ -72,15 +72,15 @@ def gban(bot: Bot, update: Update, args: List[str]):
         return
 
     if int(user_id) in SUDO_USERS:
-        message.reply_text("I spy, with my little eye... a sudo user war! Why are you guys turning on each other?")
+        message.reply_text(He is my SUDO how I gban him?")
         return
 
     if int(user_id) in SUPPORT_USERS:
-        message.reply_text("OOOH someone's trying to gban a support user! *grabs popcorn*")
+        message.reply_text("Don't try to gban a gban a support user! *grabs popcorn*")
         return
     
     if int(user_id) in WHITELIST_USERS:
-        message.reply_text("I can't ban my master's close frd.")
+        message.reply_text("I can't ban my close frd.")
         return
 
     if user_id == bot.id:
@@ -113,7 +113,7 @@ def gban(bot: Bot, update: Update, args: List[str]):
 
         return
     
-    message.reply_text("⚡️ *Snaps the Banhammer* ⚡️")
+    message.reply_text("⚡️ Ready for the meat cutting⚡️")
     
     start_time = time.time()
     datetime_fmt = "%H:%M - %d-%m-%Y"
