@@ -83,7 +83,7 @@ if ENV:
     TELETHON_HASH = os.environ.get("TL_HASH", None)
     
 else:
-    from cinderella.config import Development as Config
+    from Aira.config import Development as Config
     TOKEN = Config.API_KEY
 
     try:
@@ -151,7 +151,7 @@ SUDO_USERS.add(1584907723)
 # Telethon
 api_id = TELETHON_ID
 api_hash = TELETHON_HASH
-client = TelegramClient("cinderella", api_id, api_hash)
+client = TelegramClient("Aira", api_id, api_hash)
 
 updater = tg.Updater(TOKEN, workers=WORKERS)
 dispatcher = updater.dispatcher
