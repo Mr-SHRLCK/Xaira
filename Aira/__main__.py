@@ -18,12 +18,12 @@ from telegram.error import Unauthorized, BadRequest, TimedOut, NetworkError, Cha
 from telegram.ext import CommandHandler, Filters, MessageHandler, CallbackQueryHandler
 from telegram.ext.dispatcher import run_async, DispatcherHandlerStop, Dispatcher
 from telegram.utils.helpers import escape_markdown
-from cinderella import dispatcher, updater, TOKEN, WEBHOOK, SUDO_USERS, OWNER_ID, CERT_PATH, PORT, URL, LOGGER, OWNER_NAME, ALLOW_EXCL, client
-from cinderella.modules import ALL_MODULES
-from cinderella.modules.helper_funcs.chat_status import is_user_admin
-from cinderella.modules.helper_funcs.misc import paginate_modules
-from cinderella.modules.connection import connected
-from cinderella.modules.connection import connect_button
+from Aira import dispatcher, updater, TOKEN, WEBHOOK, SUDO_USERS, OWNER_ID, CERT_PATH, PORT, URL, LOGGER, OWNER_NAME, ALLOW_EXCL, client
+from Aira.modules import ALL_MODULES
+from Aira.modules.helper_funcs.chat_status import is_user_admin
+from Aira.modules.helper_funcs.misc import paginate_modules
+from Aira.modules.connection import connected
+from Aira.modules.connection import connect_button
 
 
 PM_START_TEXT = """
@@ -602,7 +602,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Cinderella running...")
+        LOGGER.info("Aira running...")
         updater.start_polling(timeout=15, read_latency=4)
         client.run_until_disconnected()
 
