@@ -7,21 +7,21 @@ from telegram import Message, Chat, Update, Bot
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async, Filters
 
-import cinderella.modules.sql.notes_sql as sql
-from cinderella import dispatcher, LOGGER, OWNER_ID, SUDO_USERS, MESSAGE_DUMP
-from cinderella.__main__ import DATA_IMPORT
-from cinderella.modules.helper_funcs.chat_status import user_admin
-from cinderella.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from cinderella.modules.helper_funcs.msg_types import get_note_type
-from cinderella.modules.rules import get_rules
-import cinderella.modules.sql.rules_sql as rulessql
-from cinderella.modules.sql import warns_sql as warnssql
-import cinderella.modules.sql.blacklist_sql as blacklistsql
-from cinderella.modules.sql import disable_sql as disabledsql
-from cinderella.modules.sql import cust_filters_sql as filtersql
-import cinderella.modules.sql.welcome_sql as welcsql
-import cinderella.modules.sql.locks_sql as locksql
-from cinderella.modules.connection import connected
+import Aira.modules.sql.notes_sql as sql
+from Aira import dispatcher, LOGGER, OWNER_ID, SUDO_USERS, MESSAGE_DUMP
+from Aira.__main__ import DATA_IMPORT
+from Aira.modules.helper_funcs.chat_status import user_admin
+from Aira.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from Aira.modules.helper_funcs.msg_types import get_note_type
+from Aira.modules.rules import get_rules
+import Aira.modules.sql.rules_sql as rulessql
+from Aira.modules.sql import warns_sql as warnssql
+import Aira.modules.sql.blacklist_sql as blacklistsql
+from Aira.modules.sql import disable_sql as disabledsql
+from Aira.modules.sql import cust_filters_sql as filtersql
+import Aira.modules.sql.welcome_sql as welcsql
+import Aira.modules.sql.locks_sql as locksql
+from Aira.modules.connection import connected
 
 @run_async
 @user_admin
