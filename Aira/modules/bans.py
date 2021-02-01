@@ -6,13 +6,13 @@ from telegram.error import BadRequest
 from telegram.ext import run_async, CommandHandler, Filters
 from telegram.utils.helpers import mention_html
 
-from cinderella import dispatcher, BAN_STICKER, KICK_STICKER, LOGGER, SUDO_USERS
-from cinderella.modules.disable import DisableAbleCommandHandler
-from cinderella.modules.helper_funcs.chat_status import bot_admin, user_admin, is_user_ban_protected, can_restrict, \
+from Aira import dispatcher, BAN_STICKER, KICK_STICKER, LOGGER, SUDO_USERS
+from Aira.modules.disable import DisableAbleCommandHandler
+from Aira.modules.helper_funcs.chat_status import bot_admin, user_admin, is_user_ban_protected, can_restrict, \
     is_user_admin, is_user_in_chat
-from cinderella.modules.helper_funcs.extraction import extract_user_and_text
-from cinderella.modules.helper_funcs.string_handling import extract_time
-from cinderella.modules.log_channel import loggable, gloggable
+from Aira.modules.helper_funcs.extraction import extract_user_and_text
+from Aira.modules.helper_funcs.string_handling import extract_time
+from Aira.modules.log_channel import loggable, gloggable
 
 
 @run_async
