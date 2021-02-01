@@ -1,5 +1,5 @@
 from telethon import events
-from cinderella import client
+from Aira import client
 
 
 def register(**args):
