@@ -1,4 +1,4 @@
-from cinderella import LOAD, NO_LOAD, LOGGER
+from Aira import LOAD, NO_LOAD, LOGGER
 
 
 def __list_all_modules():
