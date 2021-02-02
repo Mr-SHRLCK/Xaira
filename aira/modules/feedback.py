@@ -1,8 +1,8 @@
 import html
 from telegram import Update, Bot, ParseMode
 from telegram.ext import run_async
-from cinderella.modules.disable import DisableAbleCommandHandler
-from cinderella import dispatcher
+from aira.modules.disable import DisableAbleCommandHandler
+from aira import dispatcher
 from requests import get
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
 
@@ -16,7 +16,7 @@ def feedback(bot: Bot, update: Update):
   text = message.text[len('/feedback '):]
    
 
-  feed_text = f"Cinderella's *New* feedback from [{name}](tg://user?id={userid})\n\nfeed: {text}"
+  feed_text = f"aira's *New* feedback from [{name}](tg://user?id={userid})\n\nfeed: {text}"
   
 
   bot.send_message(-1001199155295, feed_text, parse_mode=ParseMode.MARKDOWN)
