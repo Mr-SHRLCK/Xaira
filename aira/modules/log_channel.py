@@ -1,7 +1,7 @@
 from datetime import datetime
 from functools import wraps
 
-from cinderella.modules.helper_funcs.misc import is_module_loaded
+from aira.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -11,9 +11,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, run_async
     from telegram.utils.helpers import escape_markdown
 
-    from cinderella import dispatcher, LOGGER, GBAN_LOGS
-    from cinderella.modules.helper_funcs.chat_status import user_admin
-    from cinderella.modules.sql import log_channel_sql as sql
+    from aira import dispatcher, LOGGER, GBAN_LOGS
+    from aira.modules.helper_funcs.chat_status import user_admin
+    from aira.modules.sql import log_channel_sql as sql
 
 
     def loggable(func):
