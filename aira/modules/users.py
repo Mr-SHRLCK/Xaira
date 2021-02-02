@@ -6,10 +6,10 @@ from telegram import Bot, Update, TelegramError
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 
-import cinderella.modules.sql.users_sql as sql
+import aira.modules.sql.users_sql as sql
 
-from cinderella import dispatcher, OWNER_ID, LOGGER, DEV_USERS
-from cinderella.modules.helper_funcs.chat_status import sudo_plus, dev_plus
+from aira import dispatcher, OWNER_ID, LOGGER, DEV_USERS
+from aira.modules.helper_funcs.chat_status import sudo_plus, dev_plus
 
 USERS_GROUP = 4
 DEV_AND_MORE = DEV_USERS.append(int(OWNER_ID))
