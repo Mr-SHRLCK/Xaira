@@ -17,8 +17,8 @@ if is_module_loaded(FILENAME):
 
     from telegram.ext.dispatcher import run_async
 
-    from cinderella.modules.helper_funcs.chat_status import user_admin, is_user_admin, connection_status
-    from cinderella.modules.sql import disable_sql as sql
+    from aira.modules.helper_funcs.chat_status import user_admin, is_user_admin, connection_status
+    from aira.modules.sql import disable_sql as sql
 
     DISABLE_CMDS = []
     DISABLE_OTHER = []
@@ -118,7 +118,7 @@ if is_module_loaded(FILENAME):
     def disable_module(bot: Bot, update: Update, args: List[str]):
         chat = update.effective_chat
         if len(args) >= 1:
-            disable_module = "cinderella.modules." + args[0].rsplit(".", 1)[0]
+            disable_module = "aira.modules." + args[0].rsplit(".", 1)[0]
 
             try:
                 module = importlib.import_module(disable_module)
