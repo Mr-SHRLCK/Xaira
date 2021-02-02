@@ -7,13 +7,13 @@ from telegram.error import BadRequest, TelegramError
 from telegram.ext import run_async, CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
-import cinderella.modules.sql.global_mutes_sql as sql
-from cinderella import dispatcher, OWNER_ID, DEV_USERS, SUDO_USERS, SUPPORT_USERS, STRICT_GMUTE, GBAN_LOGS
-from cinderella.modules.helper_funcs.chat_status import user_admin, is_user_admin
-from cinderella.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from cinderella.modules.helper_funcs.filters import CustomFilters
-from cinderella.modules.helper_funcs.misc import send_to_list
-from cinderella.modules.sql.users_sql import get_all_chats
+import aira.modules.sql.global_mutes_sql as sql
+from aira import dispatcher, OWNER_ID, DEV_USERS, SUDO_USERS, SUPPORT_USERS, STRICT_GMUTE, GBAN_LOGS
+from aira.modules.helper_funcs.chat_status import user_admin, is_user_admin
+from aira.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from aira.modules.helper_funcs.filters import CustomFilters
+from aira.modules.helper_funcs.misc import send_to_list
+from aira.modules.sql.users_sql import get_all_chats
 
 GMUTE_ENFORCE_GROUP = 6
 
