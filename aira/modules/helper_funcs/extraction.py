@@ -3,8 +3,8 @@ from typing import List, Optional
 from telegram import Message, MessageEntity
 from telegram.error import BadRequest
 
-from cinderella import LOGGER
-from cinderella.modules.users import get_user_id
+from aira import LOGGER
+from aira.modules.users import get_user_id
 
 
 def id_from_reply(message):
