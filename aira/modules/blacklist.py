@@ -9,11 +9,11 @@ from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 
 import cinderella.modules.sql.blacklist_sql as sql
 
-from cinderella import dispatcher, LOGGER
-from cinderella.modules.disable import DisableAbleCommandHandler
-from cinderella.modules.helper_funcs.chat_status import user_admin, user_not_admin, connection_status
-from cinderella.modules.helper_funcs.extraction import extract_text
-from cinderella.modules.helper_funcs.misc import split_message
+from aira import dispatcher, LOGGER
+from aira.modules.disable import DisableAbleCommandHandler
+from aira.modules.helper_funcs.chat_status import user_admin, user_not_admin, connection_status
+from aira.modules.helper_funcs.extraction import extract_text
+from aira.modules.helper_funcs.misc import split_message
 
 BLACKLIST_GROUP = 11
 
