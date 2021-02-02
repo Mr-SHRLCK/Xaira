@@ -16,18 +16,18 @@ from telegram import ParseMode, Update, Bot, Chat, User, MessageEntity, InlineKe
 from telegram.ext import run_async, CommandHandler, MessageHandler, Filters, CallbackQueryHandler
 from telegram.utils.helpers import escape_markdown, mention_html, mention_markdown
 
-from cinderella import dispatcher, OWNER_ID, SUDO_USERS, DEV_USERS, WHITELIST_USERS, LOGGER, MESSAGE_DUMP
-from cinderella.modules.helper_funcs.handlers import CMD_STARTERS
-from cinderella.modules.helper_funcs.misc import is_module_loaded, send_to_list
-from cinderella.modules.helper_funcs.chat_status import is_user_admin
-from cinderella.modules.helper_funcs.extraction import extract_user, extract_unt_fedban, extract_user_fban
-from cinderella.modules.helper_funcs.string_handling import markdown_parser
-from cinderella.modules.disable import DisableAbleCommandHandler
+from aira import dispatcher, OWNER_ID, SUDO_USERS, DEV_USERS, WHITELIST_USERS, LOGGER, MESSAGE_DUMP
+from aira.modules.helper_funcs.handlers import CMD_STARTERS
+from aira.modules.helper_funcs.misc import is_module_loaded, send_to_list
+from aira.modules.helper_funcs.chat_status import is_user_admin
+from aira.modules.helper_funcs.extraction import extract_user, extract_unt_fedban, extract_user_fban
+from aira.modules.helper_funcs.string_handling import markdown_parser
+from aira.modules.disable import DisableAbleCommandHandler
 
-import cinderella.modules.sql.feds_sql as sql
+import aira.modules.sql.feds_sql as sql
 
-from cinderella.modules.connection import connected
-from cinderella.modules.helper_funcs.alternate import send_message
+from aira.modules.connection import connected
+from aira.modules.helper_funcs.alternate import send_message
 # Hello bot owner, I time spent for feds many hours of my life, Please don't remove this if you still respect MrYacha and peaktogoo and AyraHikari too
 # Federation by MrYacha
 # Federation rework by Mizukito Akito
