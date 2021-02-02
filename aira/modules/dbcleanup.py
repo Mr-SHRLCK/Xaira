@@ -4,11 +4,11 @@ from telegram import Bot, Update, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CommandHandler, CallbackQueryHandler, run_async
 
-from cinderella import dispatcher, OWNER_ID, DEV_USERS
-from cinderella.modules.helper_funcs.chat_status import dev_plus
+from aira import dispatcher, OWNER_ID, DEV_USERS
+from aira.modules.helper_funcs.chat_status import dev_plus
 
-import cinderella.modules.sql.users_sql as user_sql
-import cinderella.modules.sql.global_bans_sql as gban_sql
+import aira.modules.sql.users_sql as user_sql
+import aira.modules.sql.global_bans_sql as gban_sql
 
 
 def get_invalid_chats(bot: Bot, update: Update, remove: bool = False):
