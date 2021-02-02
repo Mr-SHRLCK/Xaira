@@ -7,8 +7,8 @@ from time import sleep
 from telegram import Message, Chat, Update, Bot
 from telegram.ext import run_async
 
-from cinderella import dispatcher,WALL_API
-from cinderella.modules.disable import DisableAbleCommandHandler
+from aira import dispatcher,WALL_API
+from aira.modules.disable import DisableAbleCommandHandler
 
 
 
