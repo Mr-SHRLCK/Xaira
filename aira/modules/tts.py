@@ -12,10 +12,10 @@ from telegram import Message, Chat, Update, Bot, MessageEntity
 from telegram import ParseMode
 from telegram.ext import CommandHandler, run_async, Filters
 from telegram.utils.helpers import escape_markdown, mention_html
-from cinderella import dispatcher
-from cinderella.__main__ import STATS
-from cinderella.modules.disable import DisableAbleCommandHandler
-from cinderella.modules.helper_funcs.extraction import extract_user
+from aira import dispatcher
+from aira.__main__ import STATS
+from aira.modules.disable import DisableAbleCommandHandler
+from aira.modules.helper_funcs.extraction import extract_user
 
 def tts(bot: Bot, update: Update, args):
     current_time = datetime.strftime(datetime.now(), "%d.%m.%Y %H:%M:%S")
