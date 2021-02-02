@@ -1,9 +1,9 @@
-from cinderella import dispatcher, LOGGER
+from aira import dispatcher, LOGGER
 from telegram import Bot, Update
 from telegram.ext.dispatcher import run_async
-from cinderella.modules.helper_funcs.misc import sendMessage
+from aira.modules.helper_funcs.misc import sendMessage
 from telegram.ext import CommandHandler
-from cinderella.modules.helper_funcs.chat_status import dev_plus
+from aira.modules.helper_funcs.chat_status import dev_plus
 from subprocess import Popen, PIPE
 
 
