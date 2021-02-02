@@ -153,8 +153,8 @@
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     }
   ],
-   "name": "Cinderella",
+   "name": "aira",
    "repository": "https://github.com/Sur-vivor/CiderellaProBot",
-   "success_url": "https://telegram.dog/CinderellaProBot",
+   "success_url": "https://telegram.dog/Xaira_bot",
    "logo": "https://telegra.ph/file/511ad504656e712b88235.jpg"
 }
