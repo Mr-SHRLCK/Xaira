@@ -5,11 +5,11 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-import cinderella.modules.sql.blacklistusers_sql as sql
-from cinderella import dispatcher, OWNER_ID, DEV_USERS, SUDO_USERS, WHITELIST_USERS, SUPPORT_USERS
-from cinderella.modules.helper_funcs.chat_status import dev_plus
-from cinderella.modules.helper_funcs.extraction import extract_user_and_text, extract_user
-from cinderella.modules.log_channel import gloggable
+import aira.modules.sql.blacklistusers_sql as sql
+from aira import dispatcher, OWNER_ID, DEV_USERS, SUDO_USERS, WHITELIST_USERS, SUPPORT_USERS
+from aira.modules.helper_funcs.chat_status import dev_plus
+from aira.modules.helper_funcs.extraction import extract_user_and_text, extract_user
+from aira.modules.log_channel import gloggable
 
 BLACKLISTWHITELIST = [OWNER_ID] + DEV_USERS + SUDO_USERS + WHITELIST_USERS + SUPPORT_USERS
 BLABLEUSERS = [OWNER_ID] + DEV_USERS
