@@ -4,8 +4,8 @@ from googletrans import Translator, LANGUAGES
 from telegram import Bot, Update, ParseMode
 from telegram.ext import run_async
 
-from cinderella import dispatcher
-from cinderella.modules.disable import DisableAbleCommandHandler
+from aira import dispatcher
+from aira.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
