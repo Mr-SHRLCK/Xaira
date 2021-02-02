@@ -8,9 +8,9 @@ from telegram.ext import Updater, CommandHandler, run_async
 
 from telegram.error import TimedOut, NetworkError
 
-from cinderella import dispatcher, LOGGER
-from cinderella.modules.disable import DisableAbleCommandHandler
-from cinderella.modules.helper_funcs.chat_status import bot_admin, can_promote, user_admin, can_pin, dev_plus
+from aira import dispatcher, LOGGER
+from aira.modules.disable import DisableAbleCommandHandler
+from aira.modules.helper_funcs.chat_status import bot_admin, can_promote, user_admin, can_pin, dev_plus
 
 from requests import get
 
