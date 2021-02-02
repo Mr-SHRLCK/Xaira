@@ -6,9 +6,9 @@ from telegram import Bot, Update, ParseMode
 from telegram.ext import CommandHandler, RegexHandler, MessageHandler
 from telegram.utils.helpers import escape_markdown
 
-from cinderella import dispatcher
-from cinderella.modules.helper_funcs.handlers import CMD_STARTERS, CustomCommandHandler
-from cinderella.modules.helper_funcs.misc import is_module_loaded
+from aira import dispatcher
+from aira.modules.helper_funcs.handlers import CMD_STARTERS, CustomCommandHandler
+from aira.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
