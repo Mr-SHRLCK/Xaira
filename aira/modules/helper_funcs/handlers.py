@@ -1,8 +1,8 @@
 from telegram import Update
 from telegram.ext import CommandHandler, RegexHandler, MessageHandler
 
-from cinderella import ALLOW_EXCL
-import cinderella.modules.sql.blacklistusers_sql as sql
+from aira import ALLOW_EXCL
+import aira.modules.sql.blacklistusers_sql as sql
 
 if ALLOW_EXCL:
     CMD_STARTERS = ('/', '!')
