@@ -14,12 +14,12 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, Filters, run_async
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from cinderella import dispatcher, WHITELIST_USERS, SUPPORT_USERS, SUDO_USERS, DEV_USERS, OWNER_ID, TOKEN
-from cinderella.__main__ import IMPORTED, HELPABLE, MIGRATEABLE, STATS, USER_INFO, DATA_IMPORT, DATA_EXPORT, CHAT_SETTINGS, USER_SETTINGS 
-from cinderella.modules.disable import DisableAbleCommandHandler
-from cinderella.modules.log_channel import loggable, gloggable
-from cinderella.modules.helper_funcs.chat_status import bot_admin, can_promote, user_admin, can_pin, sudo_plus, dev_plus, connection_status
-from cinderella.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from aira import dispatcher, WHITELIST_USERS, SUPPORT_USERS, SUDO_USERS, DEV_USERS, OWNER_ID, TOKEN
+from aira.__main__ import IMPORTED, HELPABLE, MIGRATEABLE, STATS, USER_INFO, DATA_IMPORT, DATA_EXPORT, CHAT_SETTINGS, USER_SETTINGS 
+from aira.modules.disable import DisableAbleCommandHandler
+from aira.modules.log_channel import loggable, gloggable
+from aira.modules.helper_funcs.chat_status import bot_admin, can_promote, user_admin, can_pin, sudo_plus, dev_plus, connection_status
+from aira.modules.helper_funcs.extraction import extract_user, extract_user_and_text
 
 
 @run_async
