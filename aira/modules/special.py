@@ -10,11 +10,11 @@ from telegram.ext import MessageHandler, Filters, CommandHandler
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import escape_markdown
 from html import escape
-from cinderella.modules.helper_funcs.chat_status import is_user_ban_protected, bot_admin
+from aira.modules.helper_funcs.chat_status import is_user_ban_protected, bot_admin
 
-import cinderella.modules.sql.users_sql as sql
-from cinderella import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, LOGGER
-from cinderella.modules.helper_funcs.filters import CustomFilters
+import aira.modules.sql.users_sql as sql
+from aira import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, LOGGER
+from aira.modules.helper_funcs.filters import CustomFilters
 
 USERS_GROUP = 4
 
