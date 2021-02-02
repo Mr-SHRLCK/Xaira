@@ -1,8 +1,8 @@
 from telegram import Update, Bot, ParseMode
 from telegram.ext import run_async
 
-from cinderella.modules.disable import DisableAbleCommandHandler
-from cinderella import dispatcher
+from aira.modules.disable import DisableAbleCommandHandler
+from aira import dispatcher
 
 from requests import get
 
