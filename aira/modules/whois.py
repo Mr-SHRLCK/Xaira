@@ -14,14 +14,14 @@ from telegram import Message, Chat, Update, Bot, MessageEntity
 from telegram import ParseMode
 from telegram.ext import CommandHandler, run_async, Filters
 from telegram.utils.helpers import escape_markdown, mention_html
-from cinderella.modules.helper_funcs.chat_status import user_admin, sudo_plus, is_user_admin
-from cinderella import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, DEV_USERS, WHITELIST_USERS
-from cinderella.__main__ import STATS, USER_INFO, TOKEN
-from cinderella.modules.disable import DisableAbleCommandHandler, DisableAbleRegexHandler
-from cinderella.modules.helper_funcs.extraction import extract_user
-from cinderella.modules.helper_funcs.filters import CustomFilters
-import cinderella.modules.sql.users_sql as sql
-import cinderella.modules.helper_funcs.cas_api as cas
+from aira.modules.helper_funcs.chat_status import user_admin, sudo_plus, is_user_admin
+from aira import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, DEV_USERS, WHITELIST_USERS
+from aira.__main__ import STATS, USER_INFO, TOKEN
+from aira.modules.disable import DisableAbleCommandHandler, DisableAbleRegexHandler
+from aira.modules.helper_funcs.extraction import extract_user
+from aira.modules.helper_funcs.filters import CustomFilters
+import aira.modules.sql.users_sql as sql
+import aira.modules.helper_funcs.cas_api as cas
 
 @run_async
 def info(bot: Bot, update: Update, args: List[str]):
