@@ -6,11 +6,11 @@ from typing import List
 from telegram import Bot, Update, ParseMode
 from telegram.ext import run_async
 
-import cinderella.modules.fun_strings as fun_strings
-from cinderella import dispatcher
-from cinderella.modules.disable import DisableAbleCommandHandler
-from cinderella.modules.helper_funcs.chat_status import is_user_admin
-from cinderella.modules.helper_funcs.extraction import extract_user
+import aira.modules.fun_strings as fun_strings
+from aira import dispatcher
+from aira.modules.disable import DisableAbleCommandHandler
+from aira.modules.helper_funcs.chat_status import is_user_admin
+from aira.modules.helper_funcs.extraction import extract_user
 
 normiefont = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 weebyfont = ['卂','乃','匚','刀','乇','下','厶','卄','工','丁','长','乚','从','𠘨','口','尸','㔿','尺','丂','丅','凵','リ','山','乂','丫','乙']
