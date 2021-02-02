@@ -5,10 +5,10 @@ from telegram import Bot, Update, ParseMode, MAX_MESSAGE_LENGTH
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import escape_markdown
 
-import cinderella.modules.sql.userinfo_sql as sql
-from cinderella import dispatcher, SUDO_USERS, DEV_USERS
-from cinderella.modules.disable import DisableAbleCommandHandler
-from cinderella.modules.helper_funcs.extraction import extract_user
+import aira.modules.sql.userinfo_sql as sql
+from aira import dispatcher, SUDO_USERS, DEV_USERS
+from aira.modules.disable import DisableAbleCommandHandler
+from aira.modules.helper_funcs.extraction import extract_user
 
 
 @run_async
