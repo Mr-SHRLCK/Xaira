@@ -7,21 +7,21 @@ from telegram import Message, Chat, Update, Bot
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async, Filters
 
-import cinderella.modules.sql.notes_sql as sql
-from cinderella import dispatcher, LOGGER, OWNER_ID, SUDO_USERS, MESSAGE_DUMP
-from cinderella.__main__ import DATA_IMPORT
-from cinderella.modules.helper_funcs.chat_status import user_admin
-from cinderella.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from cinderella.modules.helper_funcs.msg_types import get_note_type
-from cinderella.modules.rules import get_rules
-import cinderella.modules.sql.rules_sql as rulessql
-from cinderella.modules.sql import warns_sql as warnssql
-import cinderella.modules.sql.blacklist_sql as blacklistsql
-from cinderella.modules.sql import disable_sql as disabledsql
-from cinderella.modules.sql import cust_filters_sql as filtersql
-import cinderella.modules.sql.welcome_sql as welcsql
-import cinderella.modules.sql.locks_sql as locksql
-from cinderella.modules.connection import connected
+import aira.modules.sql.notes_sql as sql
+from aira import dispatcher, LOGGER, OWNER_ID, SUDO_USERS, MESSAGE_DUMP
+from aira.__main__ import DATA_IMPORT
+from aira.modules.helper_funcs.chat_status import user_admin
+from aira.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from aira.modules.helper_funcs.msg_types import get_note_type
+from aira.modules.rules import get_rules
+import aira.modules.sql.rules_sql as rulessql
+from aira.modules.sql import warns_sql as warnssql
+import aira.modules.sql.blacklist_sql as blacklistsql
+from aira.modules.sql import disable_sql as disabledsql
+from aira.modules.sql import cust_filters_sql as filtersql
+import aira.modules.sql.welcome_sql as welcsql
+import aira.modules.sql.locks_sql as locksql
+from aira.modules.connection import connected
 
 @run_async
 @user_admin
@@ -237,7 +237,7 @@ def export_data(bot: Bot, update: Update, chat_data):
     # Backing up
     backup[chat_id] = {'bot': bot.id, 'hashes': {'info': {'rules': rules}, 'extra': notes, 'blacklist': bl, 'disabled': disabledcmd, 'locks': locked}}
     baccinfo = json.dumps(backup, indent=4)
-    f=open("cinderella{}.backup".format(chat_id), "w")
+    f=open("aira{}.backup".format(chat_id), "w")
     f.write(str(baccinfo))
     f.close()
     bot.sendChatAction(current_chat_id, "upload_document")
@@ -247,7 +247,7 @@ def export_data(bot: Bot, update: Update, chat_data):
     except BadRequest:
         pass
     bot.sendDocument(current_chat_id, document=open('cinderella{}.backup'.format(chat_id), 'rb'), caption="*Successfully imported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`\n\nNote: This  is specially made for notes.".format(chat.title, chat_id, tgl), timeout=360, reply_to_message_id=msg.message_id, parse_mode=ParseMode.MARKDOWN)
-    os.remove("cinderella{}.backup".format(chat_id)) # Cleaning file
+    os.remove("aira{}.backup".format(chat_id)) # Cleaning file
 
 
 # Temporary data
