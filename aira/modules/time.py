@@ -7,8 +7,8 @@ from typing import List
 from telegram import Bot, Update, ParseMode
 from telegram.ext import run_async
 
-from cinderella import dispatcher, TIME_API_KEY
-from cinderella.modules.disable import DisableAbleCommandHandler
+from aira import dispatcher, TIME_API_KEY
+from aira.modules.disable import DisableAbleCommandHandler
 
 def generate_time(to_find: str, findtype: List[str]) -> str:
 
