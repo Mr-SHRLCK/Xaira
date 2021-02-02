@@ -6,11 +6,11 @@ from platform import python_version, uname
 from telegram import Update, Bot, ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import run_async, CallbackQueryHandler, CommandHandler
 
-from cinderella import dispatcher, DEV_USERS, VERSION
-from cinderella.modules.disable import DisableAbleCommandHandler
-from cinderella.modules.helper_funcs.chat_status import dev_plus
-import cinderella.modules.helper_funcs.git_api as git
-from cinderella.modules.helper_funcs.filters import CustomFilters
+from aira import dispatcher, DEV_USERS, VERSION
+from aira.modules.disable import DisableAbleCommandHandler
+from aira.modules.helper_funcs.chat_status import dev_plus
+import aira.modules.helper_funcs.git_api as git
+from aira.modules.helper_funcs.filters import CustomFilters
 
 def convert(speed):
     return round(int(speed)/1048576, 2)
@@ -63,7 +63,7 @@ def status(bot: Bot, update: Update):
 	chat = update.effective_chat
 	
 	stat = "--- System Status ---\n"
-	stat += f"Cinderella Version: `{VERSION}`""\n"
+	stat += f"aira Version: `{VERSION}`""\n"
 	stat += "Python Version: `"+python_version()+"`\n"
 	stat += "GitHub API Version: `"+str(git.vercheck())+"`\n"
 	#Software Info
