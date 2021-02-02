@@ -9,19 +9,19 @@ from telegram.ext import CommandHandler, MessageHandler, Filters
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import mention_html, mention_markdown
 
-import cinderella.modules.sql.blsticker_sql as sql
-from cinderella import dispatcher, SUDO_USERS, LOGGER, OWNER_ID
-from cinderella.modules.disable import DisableAbleCommandHandler
-from cinderella.modules.helper_funcs.chat_status import can_delete, is_user_admin, user_not_admin, user_admin, \
+import aira.modules.sql.blsticker_sql as sql
+from aira import dispatcher, SUDO_USERS, LOGGER, OWNER_ID
+from aira.modules.disable import DisableAbleCommandHandler
+from aira.modules.helper_funcs.chat_status import can_delete, is_user_admin, user_not_admin, user_admin, \
 		bot_can_delete, is_bot_admin
-from cinderella.modules.helper_funcs.filters import CustomFilters
-from cinderella.modules.helper_funcs.misc import split_message
-from cinderella.modules.warns import warn
-from cinderella.modules.log_channel import loggable
-from cinderella.modules.sql import users_sql
-from cinderella.modules.connection import connected
+from aira.modules.helper_funcs.filters import CustomFilters
+from aira.modules.helper_funcs.misc import split_message
+from aira.modules.warns import warn
+from aira.modules.log_channel import loggable
+from aira.modules.sql import users_sql
+from aira.modules.connection import connected
 
-from cinderella.modules.helper_funcs.alternate import send_message
+from aira.modules.helper_funcs.alternate import send_message
 
 
 @run_async
