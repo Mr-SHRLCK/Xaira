@@ -6,10 +6,10 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async, Filters
 from telegram.utils.helpers import escape_markdown
 
-import cinderella.modules.sql.rules_sql as sql
-from cinderella import dispatcher
-from cinderella.modules.helper_funcs.chat_status import user_admin
-from cinderella.modules.helper_funcs.string_handling import markdown_parser
+import aira.modules.sql.rules_sql as sql
+from aira import dispatcher
+from aira.modules.helper_funcs.chat_status import user_admin
+from aira.modules.helper_funcs.string_handling import markdown_parser
 
 
 @run_async
