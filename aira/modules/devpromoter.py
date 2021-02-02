@@ -8,10 +8,10 @@ from telegram import Bot, Update, ParseMode, TelegramError
 from telegram.ext import CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-from cinderella import dispatcher, WHITELIST_USERS, SUPPORT_USERS, SUDO_USERS, DEV_USERS, OWNER_ID
-from cinderella.modules.helper_funcs.chat_status import whitelist_plus, dev_plus
-from cinderella.modules.helper_funcs.extraction import extract_user
-from cinderella.modules.log_channel import gloggable
+from aira import dispatcher, WHITELIST_USERS, SUPPORT_USERS, SUDO_USERS, DEV_USERS, OWNER_ID
+from aira.modules.helper_funcs.chat_status import whitelist_plus, dev_plus
+from aira.modules.helper_funcs.extraction import extract_user
+from aira.modules.log_channel import gloggable
 
 ELEVATED_USERS_FILE = os.path.join(os.getcwd(), 'cinderella/elevated_users.json')
 
