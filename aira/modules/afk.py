@@ -6,10 +6,10 @@ from telegram import MessageEntity, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import Filters, MessageHandler, run_async
 
-from cinderella import dispatcher
-from cinderella.modules.disable import DisableAbleCommandHandler, DisableAbleRegexHandler
-from cinderella.modules.sql import afk_sql as sql
-from cinderella.modules.users import get_user_id
+from aira import dispatcher
+from aira.modules.disable import DisableAbleCommandHandler, DisableAbleRegexHandler
+from aira.modules.sql import afk_sql as sql
+from aira.modules.users import get_user_id
 
 
 AFK_GROUP = 7
