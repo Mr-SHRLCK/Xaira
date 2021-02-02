@@ -8,13 +8,13 @@ from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CommandHandler, CallbackQueryHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import cinderella.modules.sql.connection_sql as sql
-from cinderella import dispatcher, SUDO_USERS, DEV_USERS, spamfilters
-from cinderella.modules.helper_funcs import chat_status
-from cinderella.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from cinderella.modules.helper_funcs.string_handling import extract_time
+import aira.modules.sql.connection_sql as sql
+from aira import dispatcher, SUDO_USERS, DEV_USERS, spamfilters
+from aira.modules.helper_funcs import chat_status
+from aira.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from aira.modules.helper_funcs.string_handling import extract_time
 
-from cinderella.modules.helper_funcs.alternate import send_message
+from aira.modules.helper_funcs.alternate import send_message
 
 user_admin = chat_status.user_admin
 
