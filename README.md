@@ -23,7 +23,7 @@ defaults set in the sample_config, hence making it easier to upgrade.
 
 An example `config.py` file could be:
 ```
-from cinderella.sample_config import Config
+from aira.sample_config import Config
 
 
 class Development(Config):
