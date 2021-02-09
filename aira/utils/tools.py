@@ -1,5 +1,5 @@
 import hashlib
-import re
+import r
 
 
 async def md5(fname: str) -> str:
