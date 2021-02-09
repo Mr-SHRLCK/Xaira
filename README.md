@@ -9,7 +9,7 @@ Multi purpose Group management bot...
 <I> Install this respiratorie at your own risk </I>
 If any problems after the deploy I'm not responsible so your wish. If you want a bot like this [use this](https://heroku.com/deploy?template=https://github.com/Sur-vivor/CinderellaProBot.git)
 ### Deploy
-[![Deploy](https://telegra.ph/file/2697c9d6ef63d9bbb5ed8.jpg)](https://heroku.com/deploy?template=https://github.com/Sur-vivor/CinderellaProBot.git)
+[![Deploy](https://telegra.ph/file/89db7949449205b76332b.jpg)](https://heroku.com/deploy?template=https://github.com/Sur-vivor/CinderellaProBot.git)
 ### Contact me through [Telegram](t.me/Xaira_bot)
 ### Configuration
 
