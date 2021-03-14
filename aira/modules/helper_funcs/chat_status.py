@@ -309,5 +309,5 @@ def connection_status(func):
 
 
 #Workaround for circular import with connection.py
-from cinderella.modules import connection
+from aira.modules import connection
 connected = connection.connected
