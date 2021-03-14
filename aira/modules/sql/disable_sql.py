@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, func, distinct
 
-from cinderella.modules.sql import SESSION, BASE
+from aira.modules.sql import SESSION, BASE
 
 
 class Disable(BASE):
