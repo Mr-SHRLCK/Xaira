@@ -2,8 +2,8 @@ import threading
 
 from sqlalchemy import Column, Integer, UnicodeText, String, ForeignKey, UniqueConstraint, func
 
-from cinderella import dispatcher
-from cinderella.modules.sql import BASE, SESSION
+from aira import dispatcher
+from aira.modules.sql import BASE, SESSION
 
 
 class Users(BASE):
