@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Boolean, Integer, distinct, func
 
-from cinderella.modules.sql import BASE, SESSION
+from aira.modules.sql import BASE, SESSION
 
 
 class CustomFilters(BASE):
