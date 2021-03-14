@@ -7,7 +7,7 @@ from telegram import Bot, Update, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 
-import cinderella.modules.sql.blacklist_sql as sql
+import aira.modules.sql.blacklist_sql as sql
 
 from aira import dispatcher, LOGGER
 from aira.modules.disable import DisableAbleCommandHandler
