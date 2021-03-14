@@ -2,8 +2,8 @@ from typing import List
 import requests
 from telegram import Message, Update, Bot, MessageEntity
 from telegram.ext import CommandHandler, run_async
-from cinderella import dispatcher
-from cinderella.modules.disable import DisableAbleCommandHandler
+from aira import dispatcher
+from aira.modules.disable import DisableAbleCommandHandler
 import pynewtonmath as newton
 import math
 
