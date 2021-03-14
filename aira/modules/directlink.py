@@ -2,7 +2,7 @@ import re
 import urllib.parse
 import json
 import requests
-from cinderella import dispatcher
+from aira import dispatcher
 from os import popen
 from random import choice
 from bs4 import BeautifulSoup
