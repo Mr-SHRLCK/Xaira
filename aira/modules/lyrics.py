@@ -3,8 +3,8 @@ from tswift import Song
 from telegram import Bot, Update, Message, Chat
 from telegram.ext import run_async
 
-from cinderella import dispatcher
-from cinderella.modules.disable import DisableAbleCommandHandler
+from aira import dispatcher
+from aira.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
