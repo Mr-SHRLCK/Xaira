@@ -8,11 +8,11 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async, Filters
 from telegram.utils.helpers import mention_html
 
-from cinderella import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, DEV_USERS, WHITELIST_USERS
-from cinderella.__main__ import STATS, USER_INFO, TOKEN
-from cinderella.modules.disable import DisableAbleCommandHandler
-from cinderella.modules.helper_funcs.chat_status import user_admin, sudo_plus
-from cinderella.modules.helper_funcs.extraction import extract_user
+from aira import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, DEV_USERS, WHITELIST_USERS
+from aira.__main__ import STATS, USER_INFO, TOKEN
+from aira.modules.disable import DisableAbleCommandHandler
+from aira.modules.helper_funcs.chat_status import user_admin, sudo_plus
+from aira.modules.helper_funcs.extraction import extract_user
 
 MARKDOWN_HELP = f"""
 Markdown is a very powerful formatting tool supported by telegram. {dispatcher.bot.first_name} has some enhancements, to make sure that \
