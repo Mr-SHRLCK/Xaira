@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, UnicodeText, Integer, String, Boolean
 
-from cinderella.modules.sql import BASE, SESSION
+from aira.modules.sql import BASE, SESSION
 
 
 class GloballyMutedUsers(BASE):
