@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, UnicodeText, Integer
 
-from cinderella.modules.sql import BASE, SESSION
+from aira.modules.sql import BASE, SESSION
 
 
 class RSS(BASE):
