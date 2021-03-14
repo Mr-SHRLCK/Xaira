@@ -3,8 +3,8 @@ import threading
 from sqlalchemy import Column, String, UnicodeText, func, distinct, Integer, Boolean
 from telegram.error import BadRequest, TelegramError, Unauthorized
 
-from cinderella import dispatcher
-from cinderella.modules.sql import SESSION, BASE
+from aira import dispatcher
+from aira.modules.sql import SESSION, BASE
 
 
 class Federations(BASE):
