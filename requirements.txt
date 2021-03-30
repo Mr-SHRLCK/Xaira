@@ -4,7 +4,6 @@ emoji
 beautifulsoup4
 telegraph
 requests
-sqlalchemy
 tswift
 coffeehouse
 python-telegram-bot==12.8
