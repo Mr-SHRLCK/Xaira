@@ -5,7 +5,7 @@ from telethon import events
 from telethon.errors.rpcerrorlist import MessageDeleteForbiddenError
 from telethon.tl.types import ChannelParticipantsAdmins
 
-from cinderella import DEV_USERS, SUDO_USERS, client
+from aira import DEV_USERS, SUDO_USERS, client
 
 # Check if user has admin rights
 

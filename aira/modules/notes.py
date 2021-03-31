@@ -9,12 +9,12 @@ from telegram.ext import CommandHandler, RegexHandler
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import escape_markdown
 
-import cinderella.modules.sql.notes_sql as sql
-from cinderella import dispatcher, MESSAGE_DUMP, LOGGER
-from cinderella.modules.disable import DisableAbleCommandHandler
-from cinderella.modules.helper_funcs.chat_status import user_admin
-from cinderella.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from cinderella.modules.helper_funcs.msg_types import get_note_type
+import aira.modules.sql.notes_sql as sql
+from aira import dispatcher, MESSAGE_DUMP, LOGGER
+from aira.modules.disable import DisableAbleCommandHandler
+from aira.modules.helper_funcs.chat_status import user_admin
+from aira.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from aira.modules.helper_funcs.msg_types import get_note_type
 
 FILE_MATCHER = re.compile(r"^###file_id(!photo)?###:(.*?)(?:\s|$)")
 
@@ -101,7 +101,7 @@ def get(bot, update, notename, show_none=True, no_format=False):
                     sql.rm_note(chat_id, notename)
                 else:
                     message.reply_text("This note could not be sent, as it is incorrectly formatted. Ask in "
-                                       "@cinderellabot if you can't figure out why!")
+                                       "@airabot if you can't figure out why!")
                     LOGGER.exception("Could not parse message #%s in chat %s", notename, str(chat_id))
                     LOGGER.warning("Message was: %s", str(note.value))
         return
